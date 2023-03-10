@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+:root {
+    --bg-primary: #F2F1DD;
+    --secondary-color: #A577AE;
+    --details-color: #B3CC71;
+    --text-color: #11100F;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    margin: 3rem 0;
+    width: 100%;
+    font-size: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--bg-primary)
+}
+
+h1 {
+    font-size: 8vw;
+    margin: 1.25rem 0;
+}
+
+.container > div {
+    background-color: #A577AE;
+}
+
+.container {
+    display: grid;
+    grid-gap: 0.25rem;
+    grid-template-areas: 
+        "a a a a"
+        "r r r r"
+        "tw ig tk fb";
+}
+
+.accesorios {
+    grid-area: a;
+}
+
+.remeras {
+    grid-area: r;
+}
+
+.tw {
+    grid-area: tw;
+}
+.ig {
+    grid-area: ig;
+}
+.fb {
+    grid-area: fb;
+}
+.tiktok {
+    grid-area: tk;
+}
+
+
